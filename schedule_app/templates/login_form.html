@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>Login | Visitor Portal</title>
+    <link rel="stylesheet" type="text/css" href="/static/schedule_app/css/login_form.css">
+    <!-- <script src="/static/schedule_app/js/login_form.js"></script> -->
+    <style type="text/css">
+        /*body
+        {
+            position: fixed; 
+            overflow-y: scroll;
+            width: 100%;
+        }*/
+    </style>
+</head>
+<body>
+    <!--
+    you can substitue the span of reauth email for a input with the email and
+    include the remember me checkbox
+    -->
+    <div class="container top-spacing">
+        <div class="card card-container">            
+            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin" action="/" method="post">
+                {% csrf_token %}
+                <span id="reauth-email" class="reauth-email"></span>
+                <div class="form-row">
+                    <div class="form-group large">
+                    	<input type="text" name="email" id="inputEmail" class="form-control" placeholder="Email / Username" required autofocus>
+                    </div>
+                </div>
+                <div class="form-row">
+                	<div class="form-group large">
+                		<input type="password" name="Password" id="inputPassword" class="form-control" placeholder="Password" required>  
+                    </div>
+                </div> 
+                <div class="form-row">
+                    <div class="form-group large">            
+                    	<button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+                    </div>
+                </div>
+            </form><!-- /form -->            
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+</body>
+</html>

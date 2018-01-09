@@ -1,0 +1,247 @@
+/*
+ * Specific styles of signin component
+ */
+/*
+ * General styles
+ */
+
+body {
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    height:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	background-image:url(../images/3.jpg);
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+
+.card-container {
+    max-width: 380px;
+    padding: 40px 40px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+.container {width: 1170px; margin: 0 auto; padding: 0 15px; box-sizing: border-box; }
+
+
+@media print {
+    #edit {
+        display: none !important;
+    }
+}
+
+/*
+ * Card component
+ */
+.card {
+    background-color: #fff;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto;
+	box-sizing: border-box;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword,
+.form-signin #inputPassword1,
+.form-signin #inputName,
+.form-signin #inputNumber,
+.form-signin #inputPersonName,
+.form-signin #fromTime,
+.form-signin #toTime {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+	margin-bottom: 15px;
+	padding:0 12px;
+	border:1px solid #dddada;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+.form-signin #inputEmail:focus,
+.form-signin #inputPassword:focus,
+.form-signin #inputPassword1:focus,
+.form-signin #inputName:focus,
+.form-signin #inputNumber:focus,
+.form-signin #inputPersonName:focus,
+.form-signin #fromTime:focus,
+.form-signin #toTime:focus {
+	border:1px solid #6891a2;
+}
+
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin input[type=tel],
+.form-signin input[type=datetime-local],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	outline:none;
+}
+
+.form-signin .form-control:focus {
+    outline: none;
+	border:1px solid #6891a2;
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);*/
+}
+
+.btn.btn-signin {
+    /*background-color: #4d90fe; */
+    background-color: rgb(104, 145, 162);
+    /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+    padding: 0px;
+	color:#fff;
+    font-weight: 700;
+	outline:none;
+    font-size: 14px;
+    height: 40px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color:#426e80;
+}
+
+.forgot-password {
+    color: rgb(104, 145, 162);
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus{
+    color: rgb(12, 97, 33);
+}
+
+
+
+/*--New CSS Start--*/
+.top-links { background:#6891a2; padding:20px;}
+.top-links ul { margin:0; padding:0; display:inline-block; width:100%; box-sizing:border-box; vertical-align:top; }
+.top-links ul li { list-style:none; float:left; padding:0 10px;}
+.top-links ul li a { color:#fff; text-decoration:none;}
+.top-links .right { float:right; }
+.form-signin textarea.form-control { padding:8px 12px; font-size:16px; font-family:Arial, Helvetica, sans-serif; border:1px solid #dddada; box-sizing: border-box; width: 100%; margin-bottom:15px;
+border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; }
+.form-signin textarea.form-control:focus { border:1px solid #6891a2;}
+.form-signin .canvas { height:200px; }
+.btn-default {
+    background-color:#e1e1e1;
+    padding: 0px;
+	outline:none;
+	color:#000;
+    font-weight: 700;
+    font-size: 14px;
+    height: 40px;
+	border:none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+.large-container { max-width:760px; }
+.form-row {display:inline-block; width:100%; vertical-align:top; }
+.form-row .form-group { width:50%; float:left; padding:0 10px; box-sizing:border-box; }
+.form-row .form-group.large { width:100%;}
+.top-spacing { padding-top:30px;}
+.center { text-align:center;}
+.alert-danger {color: #a94442; padding:0 10px; margin-bottom:10px; background-color: #f2dede; border:1px solid #ebccd1; max-width: 380px; width: 100%;display: inline-block;
+box-sizing: border-box;
+border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -ms-border-radius:3px; -o-border-radius:3px; }
+.alert-success {color: #3c763d; padding:0 10px; margin-bottom:10px; background-color: #dff0d8; border:1px solid #d6e9c6; display: inline-block;
+box-sizing: border-box;
+border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -ms-border-radius:3px; -o-border-radius:3px;}
+
+
+@media (max-width: 1199px) {
+.container { width: 970px; }
+}
+@media (max-width: 991px) {
+.container { width: 750px; }
+}
+@media (max-width: 767px) {
+.container { width: 100%; }
+}
+@media (max-width: 479px) {
+.form-row .form-group { width:100%; padding:0;}
+.form-row .form-group video { width:100%;}
+}
+/*--New CSS End--*/
+
+
